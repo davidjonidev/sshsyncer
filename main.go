@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sshsyncer/sshsyncer/cmd"
+	"github.com/davidjonidev/sshsyncer/cmd"
 )
 
 var version = "dev"

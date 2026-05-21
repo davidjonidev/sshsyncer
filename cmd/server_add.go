@@ -7,9 +7,9 @@ import (
 	"github.com/charmbracelet/huh"
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var serverAddCmd = &cobra.Command{

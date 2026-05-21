@@ -1,4 +1,4 @@
-module github.com/sshsyncer/sshsyncer
+module github.com/davidjonidev/sshsyncer
 
 go 1.26.3
 

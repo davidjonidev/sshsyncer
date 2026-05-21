@@ -5,9 +5,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	sshpkg "github.com/sshsyncer/sshsyncer/internal/ssh"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	sshpkg "github.com/davidjonidev/sshsyncer/internal/ssh"
 )
 
 var serverTestCmd = &cobra.Command{

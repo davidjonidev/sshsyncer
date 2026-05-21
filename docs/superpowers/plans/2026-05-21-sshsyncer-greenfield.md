@@ -190,10 +190,10 @@ The plan is bottom-up: leaves (env detection, op wrapper, config) first, then mi
 - Create: `main.go`
 - Create: `cmd/root.go`
 - Create: `.gitignore`
-- Create: `LICENSE` (MIT, year 2026, holder "sshsyncer contributors")
+- Create: `LICENSE` (MIT, year 2026, holder "David Joni")
 - Create: `README.md` (1-line placeholder; full docs later)
 
-- [ ] **Step 1:** `go mod init github.com/sshsyncer/sshsyncer`
+- [ ] **Step 1:** `go mod init github.com/davidjonidev/sshsyncer`
 
 - [ ] **Step 2:** Add cobra dependency
 
@@ -210,7 +210,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sshsyncer/sshsyncer/cmd"
+	"github.com/davidjonidev/sshsyncer/cmd"
 )
 
 var version = "dev"
@@ -2512,10 +2512,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/env"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/env"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 const defaultVaultName = "sshsyncer"
@@ -2628,11 +2628,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/env"
-	"github.com/sshsyncer/sshsyncer/internal/git"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/env"
+	"github.com/davidjonidev/sshsyncer/internal/git"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var doctorCmd = &cobra.Command{
@@ -2742,8 +2742,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/op"
 )
 
 var vaultCmd = &cobra.Command{
@@ -2818,9 +2818,9 @@ import (
 	"github.com/charmbracelet/huh"
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var serverAddCmd = &cobra.Command{
@@ -2928,9 +2928,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var serverListCmd = &cobra.Command{
@@ -2972,9 +2972,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var serverRemoveCmd = &cobra.Command{
@@ -3004,9 +3004,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	sshpkg "github.com/sshsyncer/sshsyncer/internal/ssh"
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/op"
+	sshpkg "github.com/davidjonidev/sshsyncer/internal/ssh"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/op"
 )
 
 var serverTestCmd = &cobra.Command{
@@ -3077,11 +3077,11 @@ import (
 	"github.com/charmbracelet/huh"
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/deployignore"
-	gitPkg "github.com/sshsyncer/sshsyncer/internal/git"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/deployignore"
+	gitPkg "github.com/davidjonidev/sshsyncer/internal/git"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var initCmd = &cobra.Command{
@@ -3173,10 +3173,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	gitPkg "github.com/sshsyncer/sshsyncer/internal/git"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	gitPkg "github.com/davidjonidev/sshsyncer/internal/git"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var targetCmd = &cobra.Command{
@@ -3231,10 +3231,10 @@ import (
 	"github.com/charmbracelet/huh"
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	gitPkg "github.com/sshsyncer/sshsyncer/internal/git"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	gitPkg "github.com/davidjonidev/sshsyncer/internal/git"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var targetEditCmd = &cobra.Command{
@@ -3302,9 +3302,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	gitPkg "github.com/sshsyncer/sshsyncer/internal/git"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	gitPkg "github.com/davidjonidev/sshsyncer/internal/git"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var targetRemoveCmd = &cobra.Command{
@@ -3344,7 +3344,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/config"
 )
 
 var targetListCmd = &cobra.Command{
@@ -3404,13 +3404,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/deploylog"
-	gitPkg "github.com/sshsyncer/sshsyncer/internal/git"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	rsyncPkg "github.com/sshsyncer/sshsyncer/internal/rsync"
-	sshpkg "github.com/sshsyncer/sshsyncer/internal/ssh"
-	"github.com/sshsyncer/sshsyncer/internal/ui"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/deploylog"
+	gitPkg "github.com/davidjonidev/sshsyncer/internal/git"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	rsyncPkg "github.com/davidjonidev/sshsyncer/internal/rsync"
+	sshpkg "github.com/davidjonidev/sshsyncer/internal/ssh"
+	"github.com/davidjonidev/sshsyncer/internal/ui"
 )
 
 var pushDry bool
@@ -3575,11 +3575,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/deploylog"
-	gitPkg "github.com/sshsyncer/sshsyncer/internal/git"
-	"github.com/sshsyncer/sshsyncer/internal/op"
-	sshpkg "github.com/sshsyncer/sshsyncer/internal/ssh"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/deploylog"
+	gitPkg "github.com/davidjonidev/sshsyncer/internal/git"
+	"github.com/davidjonidev/sshsyncer/internal/op"
+	sshpkg "github.com/davidjonidev/sshsyncer/internal/ssh"
 )
 
 var logLines int

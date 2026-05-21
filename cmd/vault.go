@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sshsyncer/sshsyncer/internal/config"
-	"github.com/sshsyncer/sshsyncer/internal/op"
+	"github.com/davidjonidev/sshsyncer/internal/config"
+	"github.com/davidjonidev/sshsyncer/internal/op"
 )
 
 var vaultCmd = &cobra.Command{
