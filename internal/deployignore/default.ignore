@@ -1,0 +1,20 @@
+# version control
+.git/
+.gitignore
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# dependency bundles
+node_modules/
+
+# sshsyncer artifacts
+.sshsyncer.json
+.sshsyncer-log
+
+# common build inputs (uncomment if applicable)
+# src/
+# _src/
+# *.scss
