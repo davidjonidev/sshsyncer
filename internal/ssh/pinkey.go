@@ -7,7 +7,6 @@ import (
 
 	xssh "golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/agent"
-	"golang.org/x/crypto/ssh/knownhosts"
 )
 
 // PinPublicKey writes pub to a temp .pub file (used by rsync's -i option)
@@ -49,19 +48,4 @@ func filterSigners(ag agent.Agent, pub string) func() ([]xssh.Signer, error) {
 		}
 		return nil, fmt.Errorf("pinned key not loaded in the SSH agent (is the 1Password vault holding it, and the agent enabled?)")
 	}
-}
-
-func knownHostsCallback() xssh.HostKeyCallback {
-	home, err := os.UserHomeDir()
-	if err != nil {
-		return xssh.InsecureIgnoreHostKey()
-	}
-	cb, err := knownhosts.New(home + "/.ssh/known_hosts")
-	if err != nil {
-		// known_hosts missing — fall back to insecure-ignore for the Go SSH
-		// path. rsync invocations still use StrictHostKeyChecking=accept-new
-		// which writes the host key on first use.
-		return xssh.InsecureIgnoreHostKey()
-	}
-	return cb
 }
