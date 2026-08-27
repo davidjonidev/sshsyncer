@@ -3,3 +3,6 @@
 *.test
 *.out
 .DS_Store
+
+# Brain-gate runtime state. Local, per-machine, never committed.
+.steward/
