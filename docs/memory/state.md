@@ -2,9 +2,12 @@
 project: davidjonidev/sshsyncer
 stack: go
 role: tool
-status: "**A showcase piece, not the studio's deploy tooling.** A Go CLI that deploys a git branch over rsync+SSH with every credential in a dedicated 1Password vault and auth pinned to one key per server. Public at `davidjonidev/sshsyncer`, written up at `davidjoni.dev/work/sshsyncer`. Moved into the fleet 2026-08-27 because it is a portfolio asset under active work and had neither an instruction file nor a brain. **The fleet's WordPress deploys do NOT run through it**; those go through CI, described in the `wp-base` case study."
-next: "**Bootstrap host keys into the 1Password vault.** Host-key verification now shares one accept-new policy across both transports, but recording on first use is trust-on-first-use, not verification. Carrying host keys in the vault alongside the SSH Key item makes even the first connection checkable against something already trusted. It needs a vault schema change, not a change to `internal/ssh/`."
-blocked_on: "Nothing. v1.0 gating on the Homebrew tap and GoReleaser artefacts is a release decision, not a blocker."
+status: |-
+  **A showcase piece, not the studio's deploy tooling.** A Go CLI that deploys a git branch over rsync+SSH with every credential in a dedicated 1Password vault and auth pinned to one key per server. Public at `davidjonidev/sshsyncer`, written up at `davidjoni.dev/work/sshsyncer`. Moved into the fleet 2026-08-27 because it is a portfolio asset under active work and had neither an instruction file nor a brain. **The fleet's WordPress deploys do NOT run through it**; those go through CI, described in the `wp-base` case study.
+next: |-
+  **Bootstrap host keys into the 1Password vault.** Host-key verification now shares one accept-new policy across both transports, but recording on first use is trust-on-first-use, not verification. Carrying host keys in the vault alongside the SSH Key item makes even the first connection checkable against something already trusted. It needs a vault schema change, not a change to `internal/ssh/`.
+blocked_on: |-
+  Nothing. v1.0 gating on the Homebrew tap and GoReleaser artefacts is a release decision, not a blocker.
 ---
 
 # Current state — sshsyncer
