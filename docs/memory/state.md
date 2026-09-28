@@ -12,6 +12,8 @@ blocked_on: |-
 
 # Current state — sshsyncer
 
+> **Frozen 2026-09-28.** Historical record, kept for past reasoning. Do not append.
+
 > A showcase piece is held to a higher bar than a private tool, not a lower one. The whole point is
 > that someone is looking, so a known weakness left in place is the thing they will find.
 

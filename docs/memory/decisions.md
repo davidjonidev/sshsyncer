@@ -1,5 +1,7 @@
 # Decisions — davidjonidev/sshsyncer
 
+> **Frozen 2026-09-28.** Historical record, kept for past reasoning. Do not append.
+
 Append-only. Authoritative for *why* anything in this repo is the way it is. Record corrections **as
 corrections**; never edit a wrong entry into a right one.
 

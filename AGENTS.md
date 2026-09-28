@@ -1,5 +1,7 @@
 # sshsyncer agent instructions
 
+**`docs/memory/` is frozen as of 2026-09-28**: read it for past reasoning, never append to it.
+
 A Go CLI that deploys a git branch to a remote server over rsync+SSH, with every credential held in
 a dedicated 1Password vault and SSH auth pinned to one key per server.
 
